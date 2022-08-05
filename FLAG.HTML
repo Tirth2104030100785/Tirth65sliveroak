@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#SliUp").click(function(){
+	$("#flower").slideUp();
+	});
+		
+$("#SliDown").click(function(){
+	$("#flower").slideDown();
+	});
+
+$("#SliTogg").click(function(){
+	$("#flower").slideToggle();
+	});
+});
+</script>
+</head>
+<body style="font-family:arial"> 
+<div style="width:40%;background-color:rgb(158, 99, 11); color:rgb(243, 16, 16); text-align:center; padding-top:10px;padding-bottom:20px"> 
+<input type="button" id="SliUp" value="Slide Up" style="background-color:rgb(23, 160, 18)or:lightgray;">
+<input type="button" id="SliDown" value="Slide Down" style="background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);">
+<input type="button" id="SliTogg" value="Slide Toggle" style="background-color:rgb(255, 255, 255);color:rgb(0, 0, 0);">
+</div>
+<img src="R.jfif" id="flower" height="40%" width="40%">
+</center>
+</body>
+</html>
